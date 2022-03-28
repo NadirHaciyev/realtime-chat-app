@@ -8,7 +8,7 @@ const Messages = require("./lib/Messages");
 app.use(cors());
 
 app.get("/", (req, res) => {
-	res.end("Merhaba Socket.IO");
+	res.end("Hello SOCKET.IO");
 });
 
 io.on("connection", (socket) => {
