@@ -18,7 +18,7 @@ Messages.prototype.upsert = function ({ message }) {
 		}),
 		(err) => {
 			if (err) {
-				console.error(err);
+				console.log(err);
 			}
 		}
 	);
@@ -29,7 +29,7 @@ Messages.prototype.list = function (callback) {
 
 	this.client.hgetall("messages", function (err, messages) {
 		if (err) {
-			console.error(err);
+			console.log(err);
 			return callback([]);
 		}
 
